@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="pixel" ng-controller="scanner" ng-init="crear_pixeles(256)">
+<head>
+	<meta charset="UTF-8">
+	<title>A pixel</title>
+	<link rel="stylesheet" href="css.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="pixel.js"></script>
+</head>
+<body>
+	<div id="holder">
+		<div ng-repeat="pixel in pixeles" id="pixel_{{pixel}}" class="pixel" style="animation-duration: {{pixel}}s;"></div>
+	</div>
+</body>
+</html>

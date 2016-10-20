@@ -1,0 +1,32 @@
+
+	html {
+	margin:						0;
+	padding:					0;
+	}
+	
+	body {
+	margin:						0;
+	padding:					0;
+	}
+	
+	#holder {
+	height:						640px;
+	width:						640px;
+	border:						1px solid;
+	resize:						both;
+	}
+	
+	.pixel {
+	height:						6.25%;
+	width:						6.25%;
+	background:					#000;
+	float:						left;
+	animation-name:				colormixer;
+    animation-iteration-count:	infinite;
+	}
+	
+	@keyframes colormixer {
+		0%		{ background: #000; }
+		50%		{ background: #FFF; }
+		100%	{ background: #000; }
+	}
